@@ -1,0 +1,141 @@
+*{
+  margin:0px;
+  padding:0px;
+  font-family: sans-serif;
+}
+.container{
+  width:70%;
+  margin: 30px auto 0 auto;
+}
+.search-box{
+  width: auto;
+  background-color:rgba(117,66,245,0.1);
+  border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#searchBox{
+  width:80%;
+  height:40px;
+  border: 0px;
+  background-color: transparent;
+  outline:none;
+  color:rgba(117,66,245,1);
+  padding-left:10px;
+}
+#searchBtn{
+  width:10%;
+  height:35px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: rgba(117,66,245,0.7);
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:30px;
+}
+.main-content h1{
+  font-size:30px;
+}
+
+#phonetic,#synonymsValue{
+  font-size:15px;
+  text-align:left;
+  padding-top:10px;
+  color: rgba(117,66,245,1);
+}
+.audio{
+  width: 40px;
+  height:40px;
+  position: relative;
+  background-color:rgba(117,66,245,0.4);
+  text-align: center;
+  border-radius: 50%;
+  color:rgba(117,66,245,1);
+}
+.audio i{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+}
+.noun,.partOfSpeech{
+  margin-top: 20px;
+  font-size: 15px;
+  font-style: italic;
+}
+.lineing{
+  display: flex;
+  flex-direction: row;
+}
+#partOfSpeech1,#partOfSpeech2{
+  color:#444;
+}
+.lineing hr{
+  height:0.4px;
+  width: 100%;
+  position: relative;
+  top:10px;
+  left:2px;
+  background-color:rgba(117,66,245,0.5);
+  border: 0px;
+}
+.meaning{
+  margin-top:25px;
+}
+.meaning h2, #synonyms{
+  font-size: 15px;
+  color:gray;
+  text-align: left;
+}
+ul{
+  margin-top:15px;
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: rgba(117,66,245,1);
+  padding-right:10px;
+}
+li{
+  color:#999;
+  font-size:15px;
+  padding-top:15px;
+  padding-left: 5px;
+}
+.synonyms{
+  margin-top: 10px;
+
+}
+/* .partOfSpeech{
+  margin-top:20px;
+} */
+#example{
+  font-size:15px;
+  margin-left:20px;
+  color:#999;
+}
+
+.sourceUrls{
+  padding-top: 20px;
+  display: flex;
+  flex-direction:row;
+}
+.simple-hr{
+  margin-top:20px;
+}
+.sourceUrls b,#sourceUrls{
+  font-size:15px;
+  color: grey;
+  padding:10px;
+}
+
+@media (max-width: 400px) {
+  .container{
+    width:80%;
+  }
+}
